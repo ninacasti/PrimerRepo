@@ -74,7 +74,7 @@ body {
 
 /* Secciones de Lorems */
 
-#sectionLorem {
+#sectionInscripciones {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -82,7 +82,7 @@ body {
     align-content: center;
 }
 
-#sectionLorem article {
+#sectionInscripciones article {
     margin: 40px;
     padding: 40px;
     text-align: center;
@@ -90,7 +90,7 @@ body {
     background-color: wheat;
 }
 
-#sectionLorem h2 {
+#sectionInscripciones h2 {
     font-size: 25px;
     font-weight: 200;
     text-align: center;
@@ -99,7 +99,7 @@ body {
     background-color: wheat;
 }
 
-#sectionLorem p {
+#sectionInscripciones p {
     color: black;
     background-color: wheat;
 }
@@ -123,8 +123,13 @@ body {
 
 #sectionNews h2 {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     background-color: wheat;
+}
+
+#sectionNews p{
+    color: black;
+    margin-bottom: 5px;
 }
 
 #sectionNews div,
@@ -314,11 +319,25 @@ body {
 
 /*Footer*/
 
+.redesSociales h3{
+    display: flex;
+    color: white;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.redesSociales div{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
 footer {
     display: flex;
     align-items: center;
     background-color: black;
-    height: 150px;
+    height: 100px;
+    padding-top: 100px;
 }
 
 footer p {
