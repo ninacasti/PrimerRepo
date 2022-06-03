@@ -72,6 +72,16 @@ body {
     flex-wrap: wrap;
 }
 
+/*Carrusel de fotos*/
+
+#divCarousel{
+    display: flex;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 40px;
+}
+
 /* Secciones de Lorems */
 
 #sectionInscripciones {
@@ -158,14 +168,14 @@ body {
     }
 
 .btnNegro {
-    width: 100px;
+    width: 150px;
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
 .btnSus {
-    width: 120px;
+    width: 150px;
     text-align: center;
 }
 
@@ -174,11 +184,12 @@ body {
 #seccionArtistas section {
     margin-left: 10%;
     display: flex;
+    flex-direction: row;
+    padding: 15px;
 }
 
 .artistasTexto {
     float: left;
-    margin-top: 90px;
     width: 300px;
 }
 
@@ -188,6 +199,19 @@ body {
 
 .artistasCuadros {
     float: right;
+}
+
+#carouselExampleControls{
+    border: 1px solid white;
+}
+
+.carousel-inner{
+    height: 50vh;
+    display: flex;
+}
+
+.carousel-item{
+    margin-left: 70px;
 }
 
 .cuadrosImagenes {
@@ -321,7 +345,8 @@ body {
 
 .redesSociales h3{
     display: flex;
-    color: white;
+    color: wheat;
+    font-size: large;
     padding-top: 100px;
     justify-content: center;
 }
@@ -349,6 +374,15 @@ footer p {
 
 /* MEDIA QUERIES */
 
+/* MEDIA 480px PARA ARRIBA */
+
+@media screen and (max-width: 480px){
+
+    .heroGaleria{
+        display: none;
+    }
+}
+
 /* MEDIA 768px PARA ARRIBA */
 
 @media screen and (max-width: 768px) {
@@ -357,7 +391,7 @@ footer p {
         display: none;
     }
 
-    #sectionLorem {
+    #sectionInscripciones {
         background-image: url(https://www.viajarwashington.com/img/galeria-arte-washington.jpg);
         grid-template-columns: 1fr;
         height: 160vh;
